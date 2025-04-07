@@ -1,0 +1,13 @@
+langchain
+langchain-community
+chromadb
+flask
+python-dotenv
+requests
+flask-cors
+unstructured[pdf,xlsx,docx]
+langchain-ollama
+pyopenssl
+nltk==3.9.1
+ndg-httpsclient
+pyasn1
