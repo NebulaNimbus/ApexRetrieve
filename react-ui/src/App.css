@@ -1,0 +1,28 @@
+.loading-bar {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #00CED1, #008080); /* Blue-green gradient */
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  .loading-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 2px;
+    background: white; /* White overlay for moving effect */
+    animation: loading-bar-animation 2s linear infinite;
+  }
+  
+  @keyframes loading-bar-animation {
+    0% {
+      left: -50%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
